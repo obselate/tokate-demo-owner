@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "approval_scope": "task",
+  "eligibility": "trusted",
+  "allowed_tools": [
+    {
+      "harness": "codex",
+      "provider": "openai"
+    },
+    {
+      "harness": "claude",
+      "provider": "anthropic"
+    },
+    {
+      "harness": "omp",
+      "provider": "openrouter"
+    },
+    {
+      "harness": "omp",
+      "provider": "openai-codex"
+    },
+    {
+      "harness": "omp",
+      "provider": "anthropic"
+    }
+  ],
+  "max_seconds": 3600,
+  "model_policy": "unrestricted",
+  "verification": [
+    [
+      "/bin/sh",
+      "-c",
+      "python3 -m unittest -v"
+    ]
+  ],
+  "required_checks": [
+    "test"
+  ]
+}
