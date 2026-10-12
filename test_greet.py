@@ -3,6 +3,9 @@ from greet import greet
 
 
 class GreetTest(unittest.TestCase):
+    def test_default_greet(self):
+        self.assertEqual(greet(), "Hello, world!")
+
     def test_greet(self):
         self.assertEqual(greet("Ada"), "Hello, Ada!")
 
