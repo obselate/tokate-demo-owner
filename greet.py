@@ -3,4 +3,4 @@ def greet(name="world"):
 
 
 def morning(name):
-    return f"Good morning, {name}."
+    return f"Good morning, {name.strip()}."

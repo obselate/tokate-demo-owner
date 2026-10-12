@@ -12,6 +12,9 @@ class GreetTest(unittest.TestCase):
     def test_morning(self):
         self.assertEqual(morning("Ada"), "Good morning, Ada.")
 
+    def test_morning_ignores_spaces(self):
+        self.assertEqual(morning("  Ada "), "Good morning, Ada.")
+
 
 if __name__ == "__main__":
     unittest.main()
