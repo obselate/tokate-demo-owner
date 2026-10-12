@@ -3,4 +3,4 @@ def greet(name):
 
 
 def farewell(name):
-    return f"Goodbye, {name}!"
+    return f"Goodbye, {name.strip()}!"

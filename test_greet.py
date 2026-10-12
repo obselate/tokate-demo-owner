@@ -9,6 +9,9 @@ class GreetTest(unittest.TestCase):
     def test_farewell(self):
         self.assertEqual(farewell("Ada"), "Goodbye, Ada!")
 
+    def test_farewell_ignores_spaces(self):
+        self.assertEqual(farewell("  Ada "), "Goodbye, Ada!")
+
 
 if __name__ == "__main__":
     unittest.main()
